@@ -6,7 +6,9 @@ const ModalContent = ({ closeModal }: any) => {
     <div className={styles.modalBox}>
       <div className={styles.modalTop}>
         <h2>Title Modal Example</h2>
-        <button onClick={closeModal}>Close</button>
+        <button onClick={closeModal} className={styles.buttonClose}><span className={`material-symbols-sharp`} >
+          close
+        </span></button>
       </div>
 
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quo enim, explicabo deserunt saepe impedit molestias animi cum unde omnis quos cumque aut, minima consequatur corrupti quae. Possimus, temporibus illo!</p>

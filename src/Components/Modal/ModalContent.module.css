@@ -1,9 +1,32 @@
-.modalBox{
-
-}
-
 .modalTop{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 2px solid rgba(199, 199, 199, 0.4);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.buttonClose{
+  display: flex;
+  align-items: center;
+  border-radius: 0.6rem;
+  padding: 0.3rem;
+  text-decoration: none;
+  border-style: none;
+  background-color: rgb(244, 244, 244);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+
+}
+
+.buttonClose:hover{
+  transition: 0.3s;
+  background-color: rgb(62, 62, 62);
+
+}
+
+span{
+  color: rgb(163, 163, 163);
 }

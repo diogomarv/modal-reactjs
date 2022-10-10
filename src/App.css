@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+  --color-primary: #7380ec;
+  --box-shadow: 0 2rem 3rem var(--color-light);
+  --color-dark: #363949;
+  --padding-1: 1.2rem;
+  --padding-button: 0.4rem 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--color-dark);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.modal{
+  width: 500px;
+  height: 500px;
+  border: 1px solid rgb(208, 208, 208);
+  border-radius: 0.85rem;
+  padding: var(--padding-1);
+  margin: 0 auto;
+  transition: 1s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.ReactModal__Overlay--after-open{
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+  opacity: 0;
+}
+
+.button__Primary{
+  background: linear-gradient(90deg, #636ee8 32.47%, #6861f0 75.77%);
+  border: 1px solid #5976e6;
+  border-radius: 6px;
   color: white;
+  padding: var(--padding-button);
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.button__Primary:hover{
+  color: rgb(9, 37, 15);
+} 

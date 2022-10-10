@@ -14,23 +14,17 @@ function App() {
     setIsOpen(true);
   }
 
-  function afterOpenModal() {
-    // references are now sync'd and can be accessed.
-    subtitle.style.color = '#f00';
-  }
-
   function closeModal() {
     setIsOpen(false);
   }
 
   return (
     <div>
-      <button onClick={openModal}>Open Modal</button>
+      <button onClick={openModal} className='button__Primary'>Open Modal</button>
       <Modal
         isOpen={modalIsOpen}
-        onAfterOpen={afterOpenModal}
         onRequestClose={closeModal}
-        contentLabel="Example Modal"
+        contentLabel="Example Modal" className="modal" closeTimeoutMS={300} 
       >
 
         <ModalContent closeModal={closeModal} />
